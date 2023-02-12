@@ -352,7 +352,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    break
                 case prefix+'sc': case prefix+'script':
                 case prefix+'sourcecode': case prefix+'scriptbot':
-                   var teks = `Bot ini menggunakan Script dari :\nhttps://youtube.com/@riycoders`
+                   var teks = `Bot ini menggunakan Script dari :\nhttps://instagram.com/anggatzi123`
                    reply(teks)
                    break
                 case prefix+'cekprem':
@@ -381,7 +381,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    mentions(txt, men, true)
                    break
                 case prefix+'daftarprem': case prefix+'daftarpremium':
-                   var teks = `Jika kamu ingin menjadi Member Premium, kamu cukup membayar Rp5.000 untuk 1 Minggu, Rp20.000 untuk 1 Bulan dan jika ingin menjadi Member Premium Permanen kamu hanya membayar Rp50.000. Jika berminat silahkan chat Owner Bot, ketik ${prefix}owner\n\nPembayaran bisa melalui Dana/Gopay/Pulsa`
+                   var teks = `Jika kamu ingin menjadi Member Premium, kamu cukup membayar Rp10.000 untuk 1 Minggu, Rp20.000 untuk 1 Bulan dan jika ingin menjadi Member Premium Permanen kamu hanya membayar Rp30.000. Jika berminat silahkan chat Owner Bot, ketik ${prefix}owner\n\nPembayaran bisa melalui Dana/Gopay/Pulsa`
                    reply(teks)
                    break
                 // Converter & Tools Menu
@@ -1061,7 +1061,7 @@ Untuk mengambil Audio/Video dari hasil pencarian`
                    break
                 case prefix+'add':
                    if (!isGroup) return reply(mess.OnlyGrup)
-                   if (!isGroupAdmins) return reply(mess.GrupAdmin)
+                   if (!isOwner) return reply(mess.OnlyOwner)
                    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
                    if (groupMembers.length == 1000) return reply(`Anda tidak dapat menambah peserta, karena Grup sudah penuh!`)
                    var mems = []
@@ -1089,7 +1089,7 @@ Untuk mengambil Audio/Video dari hasil pencarian`
                    break
                 case prefix+'kick':
                    if (!isGroup) return reply(mess.OnlyGrup)
-                   if (!isGroupAdmins) return reply(mess.GrupAdmin)
+                   if (!isOwner) return reply(mess.OnlyOwner)
                    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
                    var number;
                    if (mentionUser.length !== 0) {
