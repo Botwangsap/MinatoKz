@@ -1061,7 +1061,7 @@ Untuk mengambil Audio/Video dari hasil pencarian`
                    break
                 case prefix+'add':
                    if (!isGroup) return reply(mess.OnlyGrup)
-                   if (!isOwner) return reply(mess.OnlyOwner)
+                   if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
                    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
                    if (groupMembers.length == 1000) return reply(`Anda tidak dapat menambah peserta, karena Grup sudah penuh!`)
                    var mems = []
@@ -1089,7 +1089,7 @@ Untuk mengambil Audio/Video dari hasil pencarian`
                    break
                 case prefix+'kick':
                    if (!isGroup) return reply(mess.OnlyGrup)
-                   if (!isOwner) return reply(mess.OnlyOwner)
+                   if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
                    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
                    var number;
                    if (mentionUser.length !== 0) {
