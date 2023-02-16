@@ -344,7 +344,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    var number = ownerNumber.replace(/[^0-9]/g, '')
                    var vcard = 'BEGIN:VCARD\n'
                    + 'VERSION:3.0\n'
-                   + 'FN:riycoders'+ '\n'
+                   + 'FN:AnggaKz🗿'+ '\n'
                    + 'ORG:;\n'
                    + 'TEL;type=CELL;type=VOICE;waid=' + number + ':+' + number + '\n'
                    + 'END:VCARD'
