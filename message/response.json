@@ -1,13 +1,13 @@
 {
-  "wait": "permintaan anda sedang di proses,mohon tunggu sebentar!",
+  "wait": "permintaan anda sedang di proses,mohon tunggu sebentar!,jika eror silahkan masuk GroupBotz kami https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p",
   "error": {
     "Iv": "Link yang kamu berikan tidak valid",
     "api": "Maaf terjadi kesalahan"
   },
-  "OnlyGrup": "Perintah ini hanya bisa digunakan di grup",
-  "OnlyPM": "Perintah ini hanya bisa digunakan di private message",
-  "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup",
+  "OnlyGrup": "Perintah ini hanya bisa digunakan di grup,silahkan join GroupBotz kami https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p",
+  "OnlyPM": "Perintah ini hanya bisa digunakan di private message,silahkan join GroupBotz kami https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p",
+  "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup,silahkan join GroupBotz kami https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p",
   "BotAdmin": "Bot Harus menjadi admin",
   "OnlyOwner": "Perintah ini hanya dapat digunakan oleh owner bot",
-  "OnlyPrem": "Perintah ini khusus member premium"
+  "OnlyPrem": "Perintah ini khusus member premium,jika kamu ingin menggunakan fitur ini silahkan join terlebih dahulu kedalam groupbot kami https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p"
 }
