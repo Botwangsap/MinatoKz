@@ -201,7 +201,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                 }
                 const buttonsDefault = [
                    { urlButton: { displayText: `My instagram`, url: setting.youtube } },
-                   { urlButton: { displayText: `GroupBotz`, url : https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p } },
+                   { urlButton: { displayText: `GroupBotz`, url : setting.sosmed.instagram } },
                    { quickReplyButton: { displayText: `🥰 runtime`, id: `${prefix}runtime` } },
                    { quickReplyButton: { displayText: `🐸 sewaBotz`, id: `${prefix}donate` } },
                    { quickReplyButton: { displayText: `🗿 Owner`, id: `${prefix}owner` } }
