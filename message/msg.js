@@ -200,7 +200,11 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
 	            return x;
                 }
                 const buttonsDefault = [
-                   { urlButton: { displayText: `Source Code`, url: setting.youtube } }
+                   { urlButton: { displayText: `Source Code`, url: setting.youtube } },
+                   { urlButton: { displayText: `Instagram`, url : setting.sosmed.instagram } },
+                   { quickReplyButton: { displayText: `🥰 runtime`, id: `${prefix}runtime` } },
+                   { quickReplyButton: { displayText: `🐸 sewaBotz`, id: `${prefix}donate` } },
+                   { quickReplyButton: { displayText: `🗿 Owner`, id: `${prefix}owner` } }
                 ]
                 
                 const isImage = (type == 'imageMessage')
