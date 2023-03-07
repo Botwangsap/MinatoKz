@@ -330,7 +330,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                 case prefix+'menu':
                 case prefix+'help':
                    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount, ucapanWaktu)
-                   conn.sendMessage(from, { location: { jpegThumbnail: await reSize(fs.readFileSync(setting.pathimg), 300, 170) }, caption: teks, mentions: [sender], footer: setting.footer, templateButtons: buttonsDefault, viewOnce: true, { quoted: msg })
+                   conn.sendMessage(from, { location: { jpegThumbnail: await reSize(fs.readFileSync(setting.pathimg), 300, 170) }, caption: teks, mentions: [sender], footer: setting.footer, templateButtons: buttonsDefault, viewOnce: true }, { quoted: msg })
                    break
                 case prefix+'runtime':
                    reply(runtime(process.uptime()))
