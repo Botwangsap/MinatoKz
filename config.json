@@ -3,7 +3,6 @@
   "ownerName": "AnggaKz🗿",
   "botName": "Lisabotz-MD",
   "footer": "Follow https://instagram.com/anggatzi123",
-  "youtube": "https://instagram.com/anggatzi123",
   "packname": "Created By",
   "author": "@AnggaKz",
   "donasi": {
@@ -12,6 +11,10 @@
   },
   "sessionName": "session",
   "pathimg": "./media/7732bfe51150b0ad497e6e7460c36c56.jpg",
+  "sosmed": {
+    "youtube": "https://instagram.com/anggatzi123",
+    "instagram": "https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p"
+  },
   "lolkey": "SadTeams",
   "gamewaktu": 90,
   "limitCount": 25,
