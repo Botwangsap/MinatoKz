@@ -442,7 +442,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    break
                 case prefix+'swm': case prefix+'wm': case prefix+'take': case prefix+'takestiker':
                 case prefix+'stikerwm': case prefix+'stickerwm': case prefix+'takesticker':
-                   if (!isPremium) return reply(mess.OnlyPrem)
+                   if (!isLimit) return reply(mess.OnlyPrem)
                    var pname = q.split('|')[0] ? q.split('|')[0] : q
                    var athor = q.split('|')[1] ? q.split('|')[1] : ''
                    if (isImage || isQuotedImage) {
@@ -583,7 +583,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    break
                 case prefix+'hidetag':
                    if (!isGroup) return reply(mess.OnlyGrup)
-                   if (!isPremium && !isOwner) return reply(mess.OnlyPrem)
+                   if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
                    var memh = [];
                    groupMembers.map( i => memh.push(i.id) )
                    conn.sendMessage(from, { text: q ? q : '', mentions: memh })
@@ -655,7 +655,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    break
                 case prefix+'play':
                    if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-                   if (args.length < 2) return reply(`Kirim perintah ${command} query\nContoh : ${command} monokrom`)
+                   if (args.length < 2) return reply(`Kirim perintah ${command} query\nContoh : ${command} yameteh`)
                    reply(mess.wait)
                    await sendPlay(from, q)
                    limitAdd(sender, limit)
