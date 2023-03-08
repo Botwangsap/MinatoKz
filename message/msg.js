@@ -356,6 +356,7 @@ module.exports = async(conn, msg, m, setting, store, welcome, _afk) => {
                    break
                 case prefix+'sc': case prefix+'script':
                 case prefix+'sourcecode': case prefix+'scriptbot':
+                   if (!isOwner) return reply(mess.OnlyOwner)
                    var teks = `Bot ini menggunakan Script dari :\nhttps://instagram.com/anggatzi123`
                    reply(teks)
                    break
